@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css'
+import Navbar from './components/Navbar'
+import Header from './components/Header'
+import About from './components/About'
+import Gameplay from './components/Gameplay'
+import Ecosystem from './components/Ecosystem'
+import Features from './components/Features'
+import Roadmap from './components/Roadmap'
+import Backer from './components/Backer'
+import Team from './components/Team'
+import Advisor from './components/Advisor'
+import Footer from './components/Footer'
 
-function App() {
+function App () {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <Header/>
+      <About/>
+      <Gameplay/>
+      <Ecosystem/>
+      <Features/>
+      <Roadmap/>
+      <Backer/>
+      <Team/>
+      <Advisor/>
+      <Footer/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

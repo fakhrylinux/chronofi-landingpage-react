@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/*CSS Reset*/
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: url("../images/background.png");
+    /*padding-top: 300px;*/
+    font-weight: normal;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+header.masthead {
+    /*padding-top: calc(6rem + 74px);*/
+    /*padding-top: 160px;*/
+    /*padding-bottom: 6rem;*/
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: #002653;
+    /*height: 100px;*/
+}
+
+.nav-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+}
+
+#logo {
+    margin-top: 25px;
+    margin-left: 140px;
+    margin-bottom: 25px;
+    float: left;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*Full Width Video css*/
+header {
+    position: relative;
+    background-color: black;
+    /*height: 75vh;*/
+    /*min-height: 25rem;*/
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*min-width: 100%;*/
+    /*min-height: 100%;*/
+    /*width: auto;*/
+    /*height: auto;*/
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+header.masthead > div > div > p {
+    font-family: "Exton Free Trial", monospace;
+    font-size: 80px;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('../images/video.png') black no-repeat center center scroll;
+    }
+
+    header video {
+        display: none;
+    }
+}
+
+/*Full Width Video CSS End*/
+
+header.masthead {
+    /*padding-top: 10rem;*/
+    /*padding-bottom: calc(10rem - 4.5rem);*/
+    /*background: url("../images/Component 1 – 1.png");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+header.masthead h1, header.masthead .h1 {
+    /*font-size: 2.25rem;*/
+}
+
+@media (min-width: 992px) {
+    header.masthead {
+        /*height: 100vh;*/
+        min-height: 40rem;
+        padding-top: 4.5rem;
+        padding-bottom: 0;
+    }
+
+    header.masthead p {
+        font-size: 1.15rem;
+    }
+
+    header.masthead h1, header.masthead .h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    header.masthead h1, header.masthead .h1 {
+        font-size: 3.5rem;
+    }
+}
+
+#footer {
+    background-color: #001834;
+}
+
+section.page-section {
+    padding-top: 90px;
+}
+
+section.page-section#about > div > div > div > p {
+    font-family: "Lato Black", sans-serif;
+    font-size: 20px;
+}
+
+section.page-section#about iframe {
+    border: 0;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+section#features img.rotate {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: rotation;
+    transition: 1s;
+}
+
+section#features img.icon-feature {
+    top: 46px;
+}
+
+section#features div.inner {
+    top: 0;
+}
+
+section#features div.inner img {
+    top: -50%;
+}
+
+section#features img.text-box {
+    /*width: 315px;*/
+    /*height: 325px;*/
+    /*object-fit: none;*/
+}
+
+section#features div img.spin {
+    animation: spin 0.75s infinite linear;
+}
+
+.spin::before,
+.spin::after {
+    left: -2px;
+    top: -2px;
+    display: none;
+    position: absolute;
+    content: '';
+    width: inherit;
+    height: inherit;
+    border: inherit;
+    border-radius: inherit;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner,
+.spinner::before,
+.spinner::after {
+    display: inline-block;
+    border-color: transparent;
+    animation-duration: 1.2s;
+}
+
+.spinner::before {
+    transform: rotate(120deg);
+}
+
+.spinner::after {
+    transform: rotate(240deg);
+}
+
+
+#teaser {
+    width: 1040px;
+    height: auto;
+}
+
+.chronofitext {
+    color: #FDA31E;
+}
+
+figure {
+    position: relative
+}
+
+figcaption {
+    position: absolute;
+    /*width: 200px;*/
+    line-height: 150px;
+    text-align: center;
+    left: 150px;
+    top: -25px;
+    /*text-shadow: 0 0 1px white;*/
+    font-size: 24px;
+    /*font-weight:bold;*/
+}
+
+.full-width-image {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+}
+
+.full-width-image img {
+    width: 100%;
+}
