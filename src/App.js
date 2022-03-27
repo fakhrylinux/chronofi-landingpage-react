@@ -1,4 +1,4 @@
-// import './App.css'
+import React, { Fragment } from 'react'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
 import About from './components/About'
@@ -10,23 +10,22 @@ import Backer from './components/Backer'
 import Team from './components/Team'
 import Advisor from './components/Advisor'
 import Footer from './components/Footer'
-import { gsap } from 'gsap'
 
 function App () {
   return (
-    <div className="App">
-      <Navbar/>
-      <Header/>
-      <About/>
-      <Gameplay/>
-      <Ecosystem/>
-      <Features/>
-      <Roadmap/>
-      <Backer/>
-      <Team/>
-      <Advisor/>
-      <Footer/>
-    </div>
+      <div className="App">
+        <Navbar/>
+        <Header/>
+        <About/>
+        <Gameplay/>
+        <Ecosystem/>
+        <Features/>
+        <Roadmap/>
+        <Backer/>
+        <Team/>
+        <Advisor/>
+        <Footer/>
+      </div>
   )
 }
 

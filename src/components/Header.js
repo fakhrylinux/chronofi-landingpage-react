@@ -4,7 +4,7 @@ import playnowButton from '../assets/images/button-playnow.png'
 
 export default function Header () {
   return (
-    <header className="masthead">
+    <header className="masthead" id="#home">
       <div className="vh-100">
         <video className="mt-5" playsInline="playsinline" autoPlay="autoplay"
                muted="muted" loop="loop">
