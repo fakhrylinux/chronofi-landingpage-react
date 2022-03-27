@@ -10,6 +10,7 @@ import Backer from './components/Backer'
 import Team from './components/Team'
 import Advisor from './components/Advisor'
 import Footer from './components/Footer'
+import { gsap } from 'gsap'
 
 function App () {
   return (

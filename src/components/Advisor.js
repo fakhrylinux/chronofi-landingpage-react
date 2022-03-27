@@ -1,8 +1,25 @@
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import '../assets/css/style.css'
 import buttonAdvisor from '../assets/images/button-advisor.png'
 import timo from '../assets/images/timo-advisor.png'
+import { useEffect, useRef } from 'react'
 
 export default function Advisor () {
+  gsap.registerPlugin(ScrollTrigger);
+  const boxRef = useRef()
+  const q = gsap.utils.selector(boxRef)
+
+  // wait until DOM has been rendered
+  useEffect(() => {
+    gsap.defaults({ ease: 'power1' })
+    gsap.set(q(".lazy"), { y: 50, opacity: 0 })
+    ScrollTrigger.batch(q(".lazy"), {
+      onEnter: batch => gsap.to(batch,
+        { opacity: 1, y: 0, stagger: 0.5 }),
+    })
+  })
+
   return (
     <section className="page-section" id="advisor">
       <div className="container-fluid">
@@ -12,7 +29,7 @@ export default function Advisor () {
           </div>
         </div>
 
-        <div className="row justify-content-center mb-5">
+        <div className="row justify-content-center mb-5" ref={boxRef}>
           <div className="col-lg-3 col-md-6 col-sm-6 text-center my-4">
             <img className="img-fluid lazy" src={timo}
                  alt=""/>
