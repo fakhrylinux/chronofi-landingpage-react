@@ -10,7 +10,6 @@ import {
 } from 'react-router-dom'
 import Gameplay from './components/Gameplay'
 import Header from './components/Header'
-import Features from './components/Features'
 import Roadmap from './components/Roadmap'
 import Team from './components/Team'
 
@@ -21,7 +20,6 @@ ReactDOM.render(
         <Route path="/" element={<App/>}/>
         <Route path="#home" element={<Header />}/>
         <Route path="#gameplay" element={<Gameplay/>}/>
-        <Route path="#features" element={<Features/>}/>
         <Route path="#roadmap" element={<Roadmap/>}/>
         <Route path="/assets/file/Onepage.pdf" />
         <Route path="#ourteam" element={<Team/>}/>

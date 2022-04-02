@@ -7,6 +7,12 @@ html {
     box-sizing: border-box;
     font-size: 16px;
     height: 100%;
+    /*scroll-padding-top: calc(4.5rem - 1px);*/
+    overflow-x: hidden;
+}
+
+* {
+    max-width: 100%;
 }
 
 *, *:before, *:after {
@@ -14,10 +20,17 @@ html {
 }
 
 body {
+    /*position: relative;*/
     background: url("../images/background.png");
     /*padding-top: 300px;*/
     font-weight: normal;
+    width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
+    /*padding-right: 0;*/
+    /*padding-left: 0;*/
+    /*overflow-x: hidden;*/
 }
 
 h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -26,20 +39,52 @@ h1, h2, h3, h4, h5, h6, p, ol, ul {
     font-weight: normal;
 }
 
-header.masthead {
-    /*padding-top: calc(6rem + 74px);*/
-    /*padding-top: 160px;*/
-    /*padding-bottom: 6rem;*/
-}
 
 ol, ul {
     list-style: none;
 }
 
 img {
+    /*width: 100vw;*/
     max-width: 100%;
     height: auto;
 }
+
+/*@media (min-width: 900px) {*/
+/*    html {*/
+/*        font-size: 18px;*/
+/*        max-width: 100%;*/
+/*    }*/
+
+/*    header.masthead {*/
+/*        height: 100vh;*/
+/*        min-height: 40rem;*/
+/*        padding-top: 4.5rem;*/
+/*        padding-bottom: 0;*/
+/*    }*/
+
+/*    header.masthead p {*/
+/*        font-size: 1.15rem;*/
+/*    }*/
+
+/*    header.masthead h1, header.masthead .h1 {*/
+/*        font-size: 3rem;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1200px) {*/
+/*    html {*/
+/*        font-size: 20px;*/
+/*        max-width: 100%;*/
+/*        !*width: 100%;*!*/
+/*        !*height: 100%;*!*/
+/*        !*margin: 0;*!*/
+/*    }*/
+
+/*    header.masthead h1, header.masthead .h1 {*/
+/*        font-size: 3.5rem;*/
+/*    }*/
+/*}*/
 
 nav {
     display: flex;
@@ -53,71 +98,94 @@ nav {
 
 .nav-link {
     font-family: "Montserrat", sans-serif;
-    font-size: 24px;
-    color: white;
+    font-size: 1.5rem;
 }
 
-#logo {
-    margin-top: 25px;
-    margin-left: 140px;
-    margin-bottom: 25px;
-    float: left;
-}
 
 .no-padding {
     padding-left: 0;
     padding-right: 0;
 }
 
-/*Full Width Video css*/
-header {
+.button-section {
+    width: 331px;
+    height: auto;
+    align-self: center;
+}
+
+header.masthead {
     position: relative;
-    background-color: black;
-    /*height: 75vh;*/
-    /*min-height: 25rem;*/
-    width: 100%;
     overflow: hidden;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    /*top: 95px;*/
+    /*z-index: -1;*/
+    /*width: 100%;*/
+    /*height: 100vh;*/
+    /*padding-top: 10rem;*/
+    /*padding-top: 10px;*/
+    /*padding-bottom: calc(10rem - 4.5rem);*/
+    /*background: url("../images/Component 1 – 1.png");*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: scroll;*/
+    /*background-size: cover;*/
+
 }
 
 header video {
-    object-fit: cover;
+    /*object-fit: cover;*/
     position: absolute;
     top: 50%;
     left: 50%;
-    /*min-width: 100%;*/
-    /*min-height: 100%;*/
-    /*width: auto;*/
-    /*height: auto;*/
-    /*width: 100vw;*/
-    /*height: 100vh;*/
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
     height: auto;
     z-index: 0;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*z-index: 0;*/
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 }
 
-header .container {
-    position: relative;
-    z-index: 2;
-}
+/*header .container {*/
+/*    position: relative;*/
+/*    z-index: 2;*/
+/*}*/
 
 header .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
+    background-color: rgba(8, 27, 11, 0.3);
+    z-index: 2;
+    /*opacity: 0.5;*/
+    /*z-index: 1;*/
 }
+
 
 header.masthead > div > div > p {
     font-family: "Exton Free Trial", monospace;
-    font-size: 80px;
+    font-size: 3.75rem;
+    /*font-size: 4.5vw;*/
+}
+
+@media screen and (max-width: 576px){
+    header.masthead > div > div > p {
+        font-family: "Exton Free Trial", monospace;
+        font-size: 2rem;
+    }
 }
 
 /* Media Query for devices withi coarse pointers and no hover functionality */
@@ -126,68 +194,61 @@ header.masthead > div > div > p {
 
 @media (pointer: coarse) and (hover: none) {
     header {
-        background: url('../images/video.png') black no-repeat center center scroll;
+        /*background: url('../images/video.png') black no-repeat center center scroll;*/
     }
 
     header video {
-        display: none;
+        /*display: none;*/
     }
 }
 
 /*Full Width Video CSS End*/
 
-header.masthead {
-    /*padding-top: 10rem;*/
-    /*padding-bottom: calc(10rem - 4.5rem);*/
-    /*background: url("../images/Component 1 – 1.png");*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-}
-
 header.masthead h1, header.masthead .h1 {
     /*font-size: 2.25rem;*/
 }
 
-@media (min-width: 992px) {
-    header.masthead {
-        /*height: 100vh;*/
-        min-height: 40rem;
-        padding-top: 4.5rem;
-        padding-bottom: 0;
-    }
 
-    header.masthead p {
-        font-size: 1.15rem;
-    }
-
-    header.masthead h1, header.masthead .h1 {
-        font-size: 3rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    header.masthead h1, header.masthead .h1 {
-        font-size: 3.5rem;
-    }
-}
-
-#footer {
-    background-color: #001834;
-}
+/*section.page-section {*/
+/*    padding-top: 90px;*/
+/*}*/
 
 section.page-section {
-    padding-top: 90px;
+    /*width: 100vw;*/
+    /*max-width: 100%;*/
 }
 
-section.page-section#about > div > div > div > p {
+section#about div.container {
+    max-width: 1560px;
+}
+
+section.page-section#about {
+    background-image: url("../images/why-chronofi-background-fix1.png");
+    background-size: cover;
+}
+
+section.page-section#about p#what-is {
+    font-family: "Lato Black", sans-serif;
+    font-size: 18px;
+}
+
+section.page-section#about p.why-chronofi {
+    font-family: "Lato Black", sans-serif;
+    font-size: 18px;
+}
+
+section.page-section#about p {
     font-family: "Lato Black", sans-serif;
     font-size: 20px;
 }
 
 section.page-section#about iframe {
     border: 0;
+}
+
+section.page-section#ecosystem {
+    background-image: url("../images/ecosystem-background.png");
+    background-size: cover;
 }
 
 @keyframes rotation {
@@ -198,6 +259,7 @@ section.page-section#about iframe {
         transform: rotate(360deg);
     }
 }
+
 
 section#features img.rotate {
     animation-duration: 10s;
@@ -292,6 +354,14 @@ figcaption {
     /*font-weight:bold;*/
 }
 
+.container-image {
+    border: solid red 2px;
+    width: 1090px;
+    height: auto;
+    align-self: center;
+    place-content: center;
+}
+
 .full-width-image {
     width: 100vw;
     position: relative;
@@ -301,4 +371,173 @@ figcaption {
 
 .full-width-image img {
     width: 100%;
+}
+
+/*.flickity-prev-next-button {*/
+/*    bottom: 6%;*/
+/*}*/
+
+section#gameplay .flickity-prev-next-button {
+    top: 85%;
+    -webkit-transform: none;
+    transform: none;
+}
+
+/*.flickity-prev-next-button.previous {*/
+/*    left: auto;*/
+/*    right: 60px;*/
+/*}*/
+
+/*.flickity-prev-next-button.next {*/
+/*    right: 10px;*/
+/*}*/
+
+.flickity-button {
+    /*display: none;*/
+    /*background: rgba(0);*/
+}
+/* big previous & next buttons */
+.flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+}
+/* icon color */
+.flickity-button-icon {
+    fill: transparent;
+}
+
+button.flickity-prev-next-button.previous{
+    /*background-image: url("../images/arrow-left.svg");*/
+}
+
+section#team-carousel div.carousel-cell {
+    width: 12.5em;
+}
+
+section#advisor div.advisor {
+    width: 12.5em;
+}
+
+section#faq {
+    background-image: url("../images/faq-bg.png");
+    background-size: cover;
+}
+
+section#faq p.faq-title {
+    font-family: "Voice Activated BB", sans-serif;
+    font-size: 36px;
+}
+
+section#faq p.faq-subtitle {
+    font-family: "Voice Activated BB", sans-serif;
+    font-size: 20px;
+}
+
+section#faq h2.faq-subtitle {
+    font-family: "Voice Activated BB", sans-serif;
+    font-size: 20px;
+}
+
+/*section#faq h2.faq-subtitle span:after {*/
+/*    content: '';*/
+/*    display: inline-block;*/
+/*    !*position: relative;*!*/
+/*    border-top: .3rem solid white;*/
+/*    width: 100%;*/
+/*    !*height: 4px;*!*/
+/*    !*background: white;*!*/
+/*    transform: translate(-1rem);*/
+/*    !*top: 100%;*!*/
+/*    !*left: 0;*!*/
+/*}*/
+
+
+section#faq p.faq-content {
+    font-family: Montserrat, sans-serif;
+}
+
+section#faq div.faq-content {
+    font-family: Montserrat, sans-serif;
+}
+
+
+.accordion-button:not(.collapsed):after {
+    background-image: url("../images/accordion-minus-btn.svg");
+}
+
+.accordion-button.collapsed:after {
+    background-image: url("../images/accordion-plus-btn.svg");
+}
+
+#smart-contract-address {
+    background-color: #001F44;
+}
+
+#smart-contract-address div.container-fluid {
+    height: 69px;
+}
+
+#smart-contract-address p {
+    font-family: Montserrat, sans-serif;
+    color: white;
+}
+
+footer#footer div.container-fluid {
+    max-width: 80em;
+}
+
+#logo {
+    margin-top: 25px;
+    margin-left: 140px;
+    margin-bottom: 25px;
+    float: left;
+}
+
+footer#footer div.logo {
+    width: 20.5em;
+}
+
+footer#footer {
+    background-color: #001834;
+}
+
+#footer p {
+    font-family: Montserrat, sans-serif;
+    font-size: 0.875rem;
+}
+
+footer div.coming-soon {
+    background-color: #002550;
+}
+
+footer div.coming-soon p.coming-soon-title {
+    font-family: "Voice Activated BB", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+footer div.coming-soon p.coming-soon-content {
+    font-family: "Voice Activated BB", sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+footer div.coming-soon div#invest {
+    background-color: #001834;
+    font-family: "Voice Activated BB", sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.copyright {
+    /*width: 100vw;*/
+    /*max-width: 100%;*/
+    background-color: black;
+    height: 71px;
+}
+
+.copyright p {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 20px;
 }

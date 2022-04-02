@@ -5,8 +5,8 @@ import playnowButton from '../assets/images/button-playnow.png'
 export default function Header () {
   return (
     <header className="masthead" id="#home">
-      <div className="vh-100">
-        <video className="mt-5" playsInline="playsinline" autoPlay="autoplay"
+      <div className="">
+        <video className="" playsInline="playsinline" autoPlay="autoplay"
                muted="muted" loop="loop">
           <source src={chronofivideo} type="video/mp4"/>
         </video>

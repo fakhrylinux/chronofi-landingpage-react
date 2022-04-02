@@ -8,8 +8,8 @@ export default function Navbar () {
   // const { Link } = Anchor
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-custom fixed-top border-2 border-warning mb-5"
-      id="mainNav">
+      className="navbar navbar-dark navbar-expand-lg navbar-custom fixed-top mb-5"
+      id="navbar">
       <div className="container-fluid px-xxl-5 d-flex justify-content-between">
         <Link
           to="/"
@@ -21,9 +21,11 @@ export default function Navbar () {
           data-bs-toggle="collapse"
           data-bs-target="#navbarResponsive"
           aria-controls="navbarResponsive" aria-expanded="false"
-          aria-label="Toggle navigation"><span
-          className="navbar-toggler-icon" style={{ fontSize: '2rem' }}>
-          <i className="bi bi-list"/></span>
+          aria-label="Toggle navigation">
+          <span
+            className="navbar-toggler-icon" style={{ fontSize: '2rem' }}>
+          <i className="bi bi-list"/>
+          </span>
         </button>
 
         <div className="collapse navbar-collapse justify-content-end pe-xxl-5"
