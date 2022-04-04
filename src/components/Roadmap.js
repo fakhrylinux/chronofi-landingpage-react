@@ -31,7 +31,7 @@ export default function Roadmap () {
             <img className="mt-5" src={buttonRoadmap} alt=""/>
           </div>
         </div>
-        <div className="text-center mt-5 deferredImageContainer">
+        <div className="text-center my-5 deferredImageContainer">
           <img
             className="lazy"
             src={roadmapImg} alt=""

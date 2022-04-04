@@ -33,7 +33,7 @@ export default function Gameplay () {
           <div
             className="px-0 mb-5 col-lg-8 text-center justify-content-center button-section"
           >
-            <img className="" src={buttonGameplay} alt=""/>
+            <img className="mt-5" src={buttonGameplay} alt=""/>
           </div>
         </div>
 
