@@ -3,9 +3,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import '../assets/css/style.css'
 import buttonRoadmap from '../assets/images/button-roadmap.png'
 import roadmapImg from '../assets/images/roadmap.png'
-import {
-  ReactComponent as RoadmapSVG,
-} from '../assets/images/svg/roadmap-svg.svg'
 import { useEffect, useRef } from 'react'
 
 export default function Roadmap () {

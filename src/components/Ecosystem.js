@@ -44,7 +44,7 @@ export default function Ecosystem () {
             <img className="mt-5" src={buttonEcosystem} alt=""/>
           </div>
         </div>
-        <div className="text-center deferredImageContainer w-100">
+        <div className="text-center deferredImageContainer w-100" ref={boxRef}>
           <img className="lazy" src={ecosystem}/>
         </div>
       </div>
@@ -57,7 +57,7 @@ export default function Ecosystem () {
           </div>
         </div>
 
-        <div className="row justify-content-center mb-5 mx-auto">
+        <div className="row justify-content-center mb-5 mx-auto" ref={boxRef}>
           <div className="col-lg-2 col-4 text-center my-4">
             <Marketplace className="img-fluid w-100 lazy"/>
           </div>
