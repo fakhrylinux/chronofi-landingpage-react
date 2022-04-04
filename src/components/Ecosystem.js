@@ -40,8 +40,8 @@ export default function Ecosystem () {
     <section className="page-section" id="ecosystem">
       <div className="container preloadSection text-center">
         <div className="text-center d-flex flex-column">
-          <div className="my-5 col-lg-8 text-center button-section">
-            <img className="" src={buttonEcosystem} alt=""/>
+          <div className="mb-5 col-lg-8 text-center button-section">
+            <img className="mt-5" src={buttonEcosystem} alt=""/>
           </div>
         </div>
         <div className="text-center deferredImageContainer w-100">
@@ -57,20 +57,20 @@ export default function Ecosystem () {
           </div>
         </div>
 
-        <div className="row justify-content-center mb-5">
-          <div className="col-lg-2 col-md-6 col-sm-6 text-center my-4">
+        <div className="row justify-content-center mb-5 mx-auto">
+          <div className="col-lg-2 col-4 text-center my-4">
             <Marketplace className="img-fluid w-100 lazy"/>
           </div>
-          <div className="col-lg-2 col-md-6 col-sm-6 text-center my-4">
+          <div className="col-lg-2 col-4 text-center my-4">
             <NftStaking className="img-fluid w-100 lazy"/>
           </div>
-          <div className="col-lg-2 col-md-6 col-sm-6 text-center my-4">
+          <div className="col-lg-2 col-4 text-center my-4">
             <Adventure className="img-fluid w-100 lazy"/>
           </div>
-          <div className="col-lg-2 col-md-6 col-sm-6 text-center my-4">
+          <div className="col-lg-2 col-4 text-center my-4">
             <Mystery className="img-fluid w-100 lazy"/>
           </div>
-          <div className="col-lg-2 col-md-6 col-sm-6 text-center my-4">
+          <div className="col-lg-2 col-4 text-center my-4">
             <Battlefield className="img-fluid w-100 lazy"/>
           </div>
         </div>

@@ -25,18 +25,21 @@ export default function Gameplay () {
   })
 
   return (
-    <section className="page-section py-5" id="gameplay">
+    <section className="page-section pb-5"
+             id="gameplay"
+    >
       <div className="container-fluid preloadSection">
         <div className="row justify-content-center text-center mx-auto">
           <div
-            className="px-0 pt-5 mb-5 col-lg-8 text-center justify-content-center button-section">
+            className="px-0 mb-5 col-lg-8 text-center justify-content-center button-section"
+          >
             <img className="" src={buttonGameplay} alt=""/>
           </div>
         </div>
 
         <div className="main-carousel" data-flickity='{ "wrapAround": true}'>
           <div
-            className="carousel-cell text-center"
+            className="carousel-cell text-center mx-4"
             style={{ width: '58em', height: 'auto' }}
           >
             <img src={gamePVP} className="vw-100"
@@ -49,7 +52,7 @@ export default function Gameplay () {
             </div>
           </div>
           <div
-            className="carousel-cell text-center"
+            className="carousel-cell text-center mx-4"
             style={{ width: '58em', height: 'auto' }}
           >
             <img src={inventory} className="vw-100"
@@ -62,7 +65,7 @@ export default function Gameplay () {
             </div>
           </div>
           <div
-            className="carousel-cell text-center"
+            className="carousel-cell text-center mx-4"
             style={{ width: '58em', height: 'auto' }}
           >
             <img src={shopImage} className="vw-100"
@@ -75,7 +78,7 @@ export default function Gameplay () {
             </div>
           </div>
           <div
-            className="carousel-cell text-center"
+            className="carousel-cell text-center mx-4"
             style={{ width: '58em', height: 'auto' }}
           >
             <img src={upgradeChar}

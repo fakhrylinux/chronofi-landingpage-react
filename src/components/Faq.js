@@ -12,7 +12,7 @@ export default function Faq () {
         </div>
       </div>
 
-      <div className=" container accordion accordion-flush pb-5"
+      <div className="container accordion accordion-flush pb-5"
            id="accordionFlushExample">
 
         <div
@@ -28,11 +28,11 @@ export default function Faq () {
               style={{ backgroundColor: 'transparent', color: 'white' }}
             >
               <span
-                className="d-inline-block text-nowrap">
+                className="faq faq1">
                 ❖ What is CHRONOFi?
               </span>
               <div
-                className="d-inline-block w-100 bg-white mx-4"
+                className="bg-white mx-4 white-ruler float-end"
                 style={{ border: '2px solid white' }}
               >
 
@@ -78,12 +78,13 @@ export default function Faq () {
               aria-controls="flush-collapseTwo"
               style={{ backgroundColor: 'transparent', color: 'white' }}
             >
-              <span className="d-inline-block text-nowrap">❖ What is the team’s visions and mission?</span>
+              <span className="d-inline-block faq faq1">
+                ❖ What is the team’s visions and mission?
+              </span>
               <div
-                className="d-inline-block w-100 bg-white mx-4"
+                className="bg-white mx-4 white-ruler"
                 style={{ border: '2px solid white' }}
               >
-
               </div>
             </button>
           </h2>
@@ -92,12 +93,10 @@ export default function Faq () {
                data-bs-parent="#accordionFlushExample">
             <div className="accordion-body faq-content">
               CHRONOFi is the first 2D & 3D decentralized NFT Play-to-Earn Game
-              on POLYGON Network by CHRONOFi
-              team.
+              on POLYGON Network by CHRONOFi team.
               We aim to bring about one of the best blockchain games that offers
-              users a rich gaming experience
-              along
-              with multiple opportunities to earn money and rewards
+              users a rich gaming experience along with multiple opportunities
+              to earn money and rewards
             </div>
           </div>
         </div>
@@ -116,11 +115,12 @@ export default function Faq () {
               style={{ backgroundColor: 'transparent', color: 'white' }}
             >
               <span
-                className="d-inline-block text-nowrap">
+                className="d-inline-block faq faq1"
+              >
                 ❖ What are CHRONOFi NFT and why should you buy them?
               </span>
               <div
-                className="d-inline-block w-100 bg-white mx-4"
+                className="bg-white mx-4 white-ruler"
                 style={{ border: '2px solid white' }}
               >
               </div>
@@ -148,9 +148,11 @@ export default function Faq () {
               aria-controls="flush-collapseFour"
               style={{ backgroundColor: 'transparent', color: 'white' }}
             >
-              <span className="d-inline-block text-nowrap">❖ How to buy CHRONOFi NFT?</span>
+              <span className="d-inline-block faq faq1">
+                ❖ How to buy CHRONOFi NFT?
+              </span>
               <div
-                className="d-inline-block w-100 bg-white mx-4"
+                className="bg-white mx-4 white-ruler"
                 style={{ border: '2px solid white' }}
               >
 
@@ -162,8 +164,7 @@ export default function Faq () {
                data-bs-parent="#accordionFlushExample">
             <div className="accordion-body faq-content">
               You can buy CHRONOFi NFT, either the Robot NFT or the MysteryBox,
-              on CHRONOFi decentralized NFT open
-              market by purchasing CFC
+              on CHRONOFi decentralized NFT open market by purchasing CFC
             </div>
           </div>
         </div>
@@ -181,9 +182,11 @@ export default function Faq () {
               aria-controls="flush-collapseFive"
               style={{ backgroundColor: 'transparent', color: 'white' }}
             >
-              <span className="d-inline-block text-nowrap">❖ How to buy CHRONOFi Coin?</span>
+              <span className="d-inline-block faq faq1">
+                ❖ How to buy CHRONOFi Coin?
+              </span>
               <div
-                className="d-inline-block w-100 bg-white mx-4"
+                className="bg-white mx-4 white-ruler"
                 style={{ border: '2px solid white' }}
               >
               </div>

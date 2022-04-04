@@ -27,10 +27,10 @@ export default function Backer () {
   return (
     <section className="page-section" id="backer"
              style={{ backgroundColor: '#000f21' }}>
-      <div className="container text-center py-5">
+      <div className="container text-center pb-5">
         <div className="text-center d-flex flex-column">
           <div className="col-lg-8 text-center button-section">
-            <img className="" src={buttonBacker} alt=""/>
+            <img className="mt-5" src={buttonBacker} alt=""/>
           </div>
         </div>
 

@@ -8,7 +8,7 @@ export default function Footer () {
   return (
     <footer className="footer mt-auto pb-0" id="footer">
       <div className="container-fluid py-5">
-        <div className="row">
+        <div className="row mx-auto">
           <div className="col-lg-4 col-md-12 pt-4">
 
             <div
@@ -30,11 +30,11 @@ export default function Footer () {
           </div>
 
           <div
-            className="col-lg-4 col-md-12 d-flex justify-content-center  text-white text-center text-lg-start mt-lg-0 mt-md-2">
+            className="col-lg-4 col-md-12 d-flex justify-content-center text-center text-lg-start mt-lg-0 mt-md-2">
             <ul className="nav d-inline-flex flex-column">
               <li className="nav-item">
                 <HashLink
-                  className="nav-link text-white fw-bold" to="#"
+                  className="nav-link link-light fw-bold" to="#"
                   style={{ fontSize: '20px' }}
                 >
                   About Us
@@ -43,8 +43,9 @@ export default function Footer () {
               <li className="nav-item">
                 <Link
                   to="/assets/file/Whitepaper%20v.2.pdf"
-                  className="nav-link text-white d-inline-flex"
+                  className="nav-link link-light"
                   target="_blank"
+                  style={{ fontSize: '20px' }}
                   alt=""
                 >
                   Whitepaper
@@ -53,7 +54,7 @@ export default function Footer () {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link text-white"
+                  className="nav-link link-light"
                   to="mailto:hello@chronofi.io"
                   style={{ fontSize: '20px' }}
                 >
@@ -62,8 +63,9 @@ export default function Footer () {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link text-white"
+                  className="nav-link link-light"
                   to="assets/file/Onepage.pdf"
+                  target="_blank"
                   style={{ fontSize: '20px' }}
                 >
                   Page
@@ -71,8 +73,9 @@ export default function Footer () {
               </li>
               <li className="nav-item">
                 <Link
-                  className="nav-link text-white"
-                  to="assets/file/CHRONOFi%20Deck.pdf" target="_blank"
+                  className="nav-link link-light"
+                  to="assets/file/CHRONOFi%20Deck.pdf"
+                  target="_blank"
                   style={{ fontSize: '20px' }}
                 >
                   Pitch Deck
@@ -80,7 +83,8 @@ export default function Footer () {
               </li>
               <li className="nav-item">
                 <HashLink
-                  className="nav-link text-white" to="#"
+                  className="nav-link link-light"
+                  to="#"
                   style={{ fontSize: '20px' }}
                 >
                   Documents
@@ -89,20 +93,21 @@ export default function Footer () {
             </ul>
           </div>
 
-
           <div
-            className="col-lg-4 col-md-12 text-center text-lg-start mt-lg-0 mt-md-2">
+            className="col-12 col-lg-4 text-center text-lg-start mt-lg-0 mt-md-2 mx-auto align-self-center">
             <p className="fw-bold text-white mb-3 text-center text-lg-start"
                style={{ fontSize: '20px' }}
             >
               Join Our Community
             </p>
-            <div className="d-flex flex-column justify-content-center">
+            <div
+              className="d-flex flex-column justify-content-center mx-auto align-self-center"
+            >
               <div className="row mb-3">
                 <div
                   className="d-flex justify-content-center justify-content-lg-start">
                   <Link
-                    to="https://t.me/chronofi" className="mx-2"
+                    to="https://t.me/chronofi" className="mx-2 socmed-icon"
                     target="_blank"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="35.568"
@@ -116,7 +121,8 @@ export default function Footer () {
                     </svg>
                   </Link>
                   <Link
-                    to="https://discord.io/CHRONOFi" className="mx-2"
+                    to="https://discord.io/CHRONOFi"
+                    className="mx-2 socmed-icon"
                     target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36.338"
                          height="35.243"
@@ -129,7 +135,8 @@ export default function Footer () {
                     </svg>
                   </Link>
                   <Link
-                    to="https://twitter.com/chronofi_" className="mx-2"
+                    to="https://twitter.com/chronofi_"
+                    className="mx-2 socmed-icon"
                     target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35.388"
                          height="35.452"
@@ -142,7 +149,8 @@ export default function Footer () {
                     </svg>
                   </Link>
                   <Link
-                    to="https://medium.com/@chronofi" className="mx-2"
+                    to="https://medium.com/@chronofi"
+                    className="mx-2 socmed-icon"
                     target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36.243"
                          height="35.243"
@@ -155,7 +163,8 @@ export default function Footer () {
                     </svg>
                   </Link>
                   <Link
-                    to="https://www.youtube.com/c/CHRONOFi" className="mx-2"
+                    to="https://www.youtube.com/c/CHRONOFi"
+                    className="mx-2 socmed-icon"
                     target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36.892"
                          height="35.757"
@@ -171,26 +180,27 @@ export default function Footer () {
               </div>
 
 
-              <div className="coming-soon row p-4 align-self-center">
+              <div className="coming-soon row p-4 align-self-center mx-auto">
                 <div className="col-8 col-lg-12 mx-auto">
                   <p className="coming-soon-title text-start">COMING SOON</p>
-                  <p className="coming-soon-content text-start">We'll be
-                    launching our project soon, so be sure to
-                    join our community</p>
+                  <p className="coming-soon-content text-start">
+                    We'll be launching our project soon, so be sure to join our
+                    community
+                  </p>
                   <div className="d-flex text-center justify-content-center">
                     <div className="d-inline-flex  mt-1 p-3" id="invest">
                       <p className="coming-soon-content">
-                        <Link className="link-light text-decoration-none"
-                              to="https://forms.gle/UpSEaTwQhggGmQWz6"
-                              target="_blank">
+                        <Link
+                          className="link-light text-decoration-none"
+                          to="https://forms.gle/UpSEaTwQhggGmQWz6"
+                          target="_blank"
+                        >
                           INVEST IN CHRONOFI
                         </Link>
                       </p>
                     </div>
-
                   </div>
                 </div>
-
               </div>
             </div>
           </div>

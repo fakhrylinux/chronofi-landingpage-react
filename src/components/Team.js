@@ -31,7 +31,7 @@ export default function Team () {
   })
 
   return (
-    <section className="page-section pt-5" id="team-carousel">
+    <section className="page-section" id="team-carousel">
       <div className="container-fluid">
         <div className="row gx-4 gx-lg-5 justify-content-center mx-auto">
           <div
@@ -48,7 +48,8 @@ export default function Team () {
               <br/>CEO & Founder
             </p>
             <div className="text-center mt-4">
-              <a href="https://www.linkedin.com/in/vannn" target="_blank">
+              <a className="icon" href="https://www.linkedin.com/in/vannn"
+                 target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                      viewBox="0 0 20 20">
                   <g transform="translate(-756.645 -404.943)">
@@ -84,7 +85,8 @@ export default function Team () {
               <br/>COO & Co-Founder
             </p>
             <div className="text-center mt-4">
-              <a href="https://www.linkedin.com/in/alfanf/" target="_blank">
+              <a className="icon" href="https://www.linkedin.com/in/alfanf/"
+                 target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                      viewBox="0 0 20 20">
                   <g transform="translate(-756.645 -404.943)">
@@ -120,7 +122,8 @@ export default function Team () {
               <br/>CMO
             </p>
             <div className="text-center mt-4">
-              <a href="https://www.linkedin.com/in/zummia/" target="_blank">
+              <a className="icon" href="https://www.linkedin.com/in/zummia/"
+                 target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                      viewBox="0 0 20 20">
                   <g transform="translate(-756.645 -404.943)">
@@ -156,7 +159,8 @@ export default function Team () {
               <br/>CPO
             </p>
             <div className="text-center mt-4">
-              <a href="https://www.linkedin.com/in/fatma-misky-4388b3155/"
+              <a className="icon"
+                 href="https://www.linkedin.com/in/fatma-misky-4388b3155/"
                  target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                      viewBox="0 0 20 20">
@@ -193,7 +197,8 @@ export default function Team () {
               <br/>2D / 3D DESIGN
             </p>
             <div className="text-center mt-4">
-              <a href="https://www.linkedin.com/in/taufikkurnia23/"
+              <a className="icon"
+                 href="https://www.linkedin.com/in/taufikkurnia23/"
                  target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                      viewBox="0 0 20 20">
@@ -230,7 +235,7 @@ export default function Team () {
               <br/>2D / 3D DESIGN
             </p>
             <div className="text-center mt-4">
-              <a href="#">
+              <a className="icon" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                      viewBox="0 0 20 20">
                   <g transform="translate(-756.645 -404.943)">
@@ -266,7 +271,7 @@ export default function Team () {
               <br/>UI / UX
             </p>
             <div className="text-center mt-4">
-              <a href="#">
+              <a className="icon" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                      viewBox="0 0 20 20">
                   <g transform="translate(-756.645 -404.943)">
@@ -302,7 +307,7 @@ export default function Team () {
               <br/>GAME DESIGN
             </p>
             <div className="text-center mt-4">
-              <a href="#">
+              <a className="icon" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                      viewBox="0 0 20 20">
                   <g transform="translate(-756.645 -404.943)">
@@ -338,7 +343,7 @@ export default function Team () {
               <br/>COMMUNITY
             </p>
             <div className="text-center mt-4">
-              <a href="#">
+              <a className="icon" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                      viewBox="0 0 20 20">
                   <g transform="translate(-756.645 -404.943)">
@@ -374,9 +379,9 @@ export default function Team () {
               <br/>LEAD PROGRAMMER
             </p>
             <div className="text-center mt-4">
-              <a
-                href="https://www.linkedin.com/in/muhammad-fakhry-burhanuddin-28b8a6b4/"
-                target="_blank">
+              <a className="icon"
+                 href="https://www.linkedin.com/in/muhammad-fakhry-burhanuddin-28b8a6b4/"
+                 target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                      viewBox="0 0 20 20">
                   <g transform="translate(-756.645 -404.943)">

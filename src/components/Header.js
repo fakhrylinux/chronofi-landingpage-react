@@ -1,24 +1,22 @@
 import '../assets/css/style.css'
 import chronofivideo from '../assets/video/chronofi.mp4'
-import playnowButton from '../assets/images/button-playnow.png'
+import playnowButton from '../assets/images/playnow-btn.png'
 
 export default function Header () {
   return (
-    <header className="masthead" id="#home">
-      <div className="">
-        <video className="" playsInline="playsinline" autoPlay="autoplay"
-               muted="muted" loop="loop">
-          <source src={chronofivideo} type="video/mp4"/>
-        </video>
-      </div>
+    <header className="masthead py-0" id="#home">
+      <video className="" playsInline="playsinline" autoPlay="autoplay"
+             muted="muted" loop="loop">
+        <source src={chronofivideo} type="video/mp4"/>
+      </video>
       <div
-        className="align-items-end bottom-0 position-absolute bottom-0 start-0 ms-5 ps-xxl-5 mb-5 pb-5">
-        <div className="mb-5">
-          <p className="text-white lh-1">DIGITAL GAMING<br/>PLATFORM ON
-            BLOCKCHAIN</p>
+        className="header-title align-items-end position-absolute">
+        <div className="mb-3 text-center text-lg-start">
+          <p className="text-white lh-1">
+            DIGITAL GAMING<br/>PLATFORM ON BLOCKCHAIN</p>
         </div>
-        <div>
-          <img src={playnowButton}/>
+        <div className="text-center text-lg-start">
+          <img id="playnow" src={playnowButton}/>
         </div>
       </div>
     </header>

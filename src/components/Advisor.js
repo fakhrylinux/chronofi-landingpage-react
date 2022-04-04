@@ -37,7 +37,7 @@ export default function Advisor () {
                 <br/>ICO ADVISOR
               </p>
               <div className="text-center mt-4">
-                <a href="#">
+                <a className="icon" href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                        viewBox="0 0 20 20">
                     <g transform="translate(-756.645 -404.943)">

@@ -11,6 +11,7 @@ import Advisor from './components/Advisor'
 import Footer from './components/Footer'
 import Faq from './components/Faq'
 import SmartContractAddress from './components/SmartContractAddress'
+import Copyright from './components/Copyright'
 
 function App () {
   return (
@@ -27,6 +28,7 @@ function App () {
       <Faq/>
       <SmartContractAddress/>
       <Footer/>
+      <Copyright/>
     </div>
   )
 }
