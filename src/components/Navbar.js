@@ -74,7 +74,7 @@ export default function Navbar () {
                 </li>
                 <li className="nav-item d-inline-flex justify-content-center">
                   <Link
-                    to="/assets/file/Onepage.pdf"
+                    to="/assets/file/One Page.pdf"
                     className="nav-link link-light d-inline-flex"
                     target="_blank"
                   >

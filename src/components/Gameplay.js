@@ -37,7 +37,9 @@ export default function Gameplay () {
           </div>
         </div>
 
-        <div className="main-carousel" data-flickity='{ "wrapAround": true}'>
+        <div
+          className="main-carousel"
+          data-flickity='{ "wrapAround": true, "imagesLoaded": true }'>
           <div
             className="carousel-cell text-center mx-4"
             style={{ width: '58em', height: 'auto' }}
