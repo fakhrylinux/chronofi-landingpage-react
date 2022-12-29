@@ -42,7 +42,7 @@ export default function Footer () {
               </li>
               <li className="nav-item">
                 <Link
-                  to="/assets/file/Whitepaper%20v.2.pdf"
+                  to="/assets/file/Whitepaper_v1.2.pdf"
                   className="nav-link link-light"
                   target="_blank"
                   style={{ fontSize: '20px' }}
